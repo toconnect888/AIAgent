@@ -1,0 +1,54 @@
+# ============================================================
+# Python Requirements for Document & File Creation
+# ============================================================
+# Install with: pip install -r requirements.txt
+
+python-dotenv>=1.2.2
+
+# --- Excel (.xlsx) ---
+openpyxl>=3.1.2          # Create/edit Excel files with formatting & formulas
+pandas>=2.2.0             # Data analysis, read/write Excel & CSV
+xlsxwriter>=3.2.0         # Alternative Excel writer with advanced chart support
+xlrd>=2.0.1               # Read legacy .xls files (Excel 97-2003)
+
+
+# --- Word (.docx) ---
+python-docx>=1.1.0        # Create and edit Word documents
+
+
+# --- PowerPoint (.pptx) ---
+python-pptx>=0.6.23       # Create and edit PowerPoint presentations
+Pillow>=10.3.0             # Image handling (required by python-pptx for thumbnails)
+
+
+# --- PDF ---
+pypdf>=4.2.0              # Read, merge, split, rotate, encrypt PDFs
+pdfplumber>=0.11.0        # Extract text and tables from PDFs with layout
+reportlab>=4.1.0          # Create PDFs from scratch (canvas & flowable layout)
+pdf2image>=1.17.0         # Convert PDF pages to images (requires poppler)
+pytesseract>=0.3.10       # OCR for scanned PDFs (requires Tesseract installed)
+
+
+# --- CSV / Data ---
+pandas>=2.2.0             # Already listed above — handles CSV natively
+pyarrow>=15.0.0           # Fast Parquet/Arrow support (used by pandas)
+
+
+# --- Utilities ---
+requests>=2.31.0          # HTTP requests (downloading files, APIs)
+tqdm>=4.66.0              # Progress bars for batch file processing
+python-dateutil>=2.9.0    # Date parsing utilities
+
+
+# ============================================================
+# Notes:
+#
+# Node.js packages (installed separately via npm):
+#   npm install -g docx         # Advanced Word doc generation
+#   npm install -g pptxgenjs    # Advanced PowerPoint generation
+#
+# System packages (installed via apt/brew):
+#   LibreOffice  — formula recalculation, file conversion
+#   Poppler      — PDF utilities (pdftotext, pdftoppm, pdfimages)
+#   Tesseract    — OCR engine (required by pytesseract)
+# ============================================================
